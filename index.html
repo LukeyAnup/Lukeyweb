@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <hmtl>
-    <head>
-        <meta charset="utf-8">
-        <title>Anup Subedi coming soon</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="Soon">
-            <p>Building Awesome Website</p>
-            <h1>COMING SOON</h1>
-            <hr>
-            <p id="launch"></p>
-            </div>
-        </header>
-    </body>
-    
-    
-    
-    <script>
-    
-        var countDownDate = new Date ("July 10, 2022 00:00:00").getTime();
-
-        var x = setInterval(function() {
-
-        var now = new Date ().getTime();
-
-        var distance = countDownDate - now;
-
-        var days = Math.floor (distance /(1000*60*60*24));
-         var hours = Math.floor ((distance % (1000*60*60*24)) / (1000*60*60));
-          var minutes = Math.floor ((distance % (1000*60*60)) / (1000*60));
-           var seconds = Math.floor ((distance % (1000*60)) / 1000);
-
-document.getElementById("launch").innerHTML=days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-    
-    if (distance < 0) {
-    clearInterval(x);
-    document.getElementById('launch').innerHTML="EXPIRED";
-    }
-            
-}, 1000);
-    
-    </script>
+  <head>
+    <meta charset="utf-8" />
+    <title>Anup Subedi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <a class="logo" href="#"><b>Anup</b></a>
+      <div class="menu">
+        <a href="#" class="info">Home</a>
+        <a href="#" class="info">Works</a>
+        <a href="#" class="info">About</a>
+      </div>
+    </div>
+    <div>
+      <img src="lukeybot.jpg" class="pic" alternate="my photo" />
+    </div>
+    <div class="icons">
+      <li>
+        <a href="https://facebook.com/lukeyanup"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a href="https://instagram.com/lukeyanup"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a href="https://twitter.com/lukeyanup"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/lukeyanup" class="fa fa-github"></a>
+        <a href="https://linkedin.com/in/lukeyanup/" class="fa fa-linkedin"></a>
+      </li>
+    </div>
+    <div class="footer">Hi its me Anup Subedi. Thank you.</div>
+  </body>
 </hmtl>
